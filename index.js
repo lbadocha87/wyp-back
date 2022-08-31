@@ -4,9 +4,9 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-const apiClient = require('../app/clientApi');
-const apiEmployee = require('../app/employeeApi');
-const equipments = require('../app/equipmentApi');
+const apiClient = require('./app/clientApi');
+const apiEmployee = require('./app/employeeApi');
+const equipments = require('./app/equipmentApi');
 
 const config = {
     origin: 'http://' + process.env.DB_HOST

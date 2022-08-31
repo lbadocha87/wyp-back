@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 
-mongoose.connect('mongodb://' + process.env.DB_HOST + '/' + process.env.DB_NAME, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://staszek:g0Ye3zltqrEAcHCJ@cluster0.lihsftb.mongodb.net/app?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const schema = mongoose.Schema({
     email: {
